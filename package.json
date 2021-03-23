@@ -1,0 +1,22 @@
+{
+  "name": "vite-project",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "jl-ui-test": "^1.0.2",
+    "vue": "^3.0.5",
+    "vue-router": "^4.0.3",
+    "vue-types": "^3.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.1.4",
+    "@vitejs/plugin-vue-jsx": "^1.1.2",
+    "@vue/compiler-sfc": "^3.0.5",
+    "typescript": "^4.1.3",
+    "vite": "^2.0.1"
+  }
+}
