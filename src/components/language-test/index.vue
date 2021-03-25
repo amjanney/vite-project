@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-03-25 17:24:19
- * @LastEditTime: 2021-03-25 17:30:29
+ * @LastEditTime: 2021-03-25 19:26:50
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vite-project/src/components/language-test/index.vue
@@ -15,7 +15,7 @@
         <option value="ja">ja</option>
       </select>
     </form>
-    <p>{{ t('hello') }}</p>
+    <p class="text">{{ t('hello') }}</p>
   </div>
 </template>
 
@@ -48,6 +48,8 @@
 }
 </i18n>
 
-<style scoped>
-
+<style lang="scss" scoped>
+  .text {
+    color: red;
+  }
 </style>
