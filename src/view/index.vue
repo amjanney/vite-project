@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-03-10 10:49:27
- * @LastEditTime: 2021-03-25 19:20:32
+ * @LastEditTime: 2021-03-25 19:42:00
  * @LastEditors: Please set LastEditors
  * @Description: 组建入口文件
  * @FilePath: /vite-project/src/view/index.vue
@@ -26,6 +26,10 @@
     <hr />
     
     <language-test />
+
+     <hr />
+
+    <element-test />
   </div>
 </template>
 
@@ -33,10 +37,12 @@
   import { defineComponent } from 'vue'
   import ModelModifier from '/@/components/ModelModifier.vue';
   import HelloWorld from '/@/components/HelloWorld.vue'
-  import CompositionApi from '/@/components/composition-api/index.vue';
-  import Jsx from '/@/components/jsx/index.vue';
-  import MockTest from '/@/components/mock-plugin-test/index.vue';
-  import LanguageTest from '/@/components/language-test/index.vue';
+  import CompositionApi from './test/composition-api/index.vue';
+  import Jsx from './test/jsx/index.vue';
+  import MockTest from './test/mock-plugin-test/index.vue';
+  import LanguageTest from './test/language-test/index.vue';
+  import ElementTest from './test/element3-test/index.vue';
+
   export default defineComponent({
     name: 'home',
     components: {
@@ -45,7 +51,8 @@
       CompositionApi,
       Jsx,
       MockTest,
-      LanguageTest
+      LanguageTest,
+      ElementTest
     }
   })
 </script>
