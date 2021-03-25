@@ -10,6 +10,7 @@ export default ({ command }: ConfigEnv): UserConfigExport => {
       vue(),
       vueJsx(),
       viteMockServe({
+        ignore: /^\_/,
         mockPath: 'mock',
       })
     ]
