@@ -1,8 +1,9 @@
-import { UserConfigExport, ConfigEnv } from 'vite';
+import path from 'path'
+import { UserConfigExport, ConfigEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from "@vitejs/plugin-vue-jsx"
-// import virtualModule from './plugins/virutal-module.js';
-import { viteMockServe } from 'vite-plugin-mock';
+import { viteMockServe } from 'vite-plugin-mock'
+import vueI18n from '@intlify/vite-plugin-vue-i18n'
 
 export default ({ command }: ConfigEnv): UserConfigExport => {
   return {
@@ -12,6 +13,9 @@ export default ({ command }: ConfigEnv): UserConfigExport => {
       viteMockServe({
         ignore: /^\_/,
         mockPath: 'mock',
+      }),
+      vueI18n({
+        include: path.resolve(__dirname, './src/locales/**')
       })
     ]
   }

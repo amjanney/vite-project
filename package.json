@@ -8,12 +8,14 @@
   },
   "dependencies": {
     "jl-ui-test": "^1.0.2",
+    "mockjs": "^1.1.0",
     "vue": "^3.0.5",
     "vue-router": "^4.0.3",
     "vue-types": "^3.0.2",
-    "mockjs": "^1.1.0"
+    "vue-i18n": "^9.0.0-rc.7"
   },
   "devDependencies": {
+    "@intlify/vite-plugin-vue-i18n": "^2.0.4",
     "@vitejs/plugin-vue": "^1.1.4",
     "@vitejs/plugin-vue-jsx": "^1.1.2",
     "@vue/compiler-sfc": "^3.0.5",
