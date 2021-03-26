@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-02-22 16:21:39
- * @LastEditTime: 2021-03-25 19:40:55
+ * @LastEditTime: 2021-03-26 09:52:17
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vite-project/src/main.ts
@@ -19,7 +19,7 @@ import messages from "@intlify/vite-plugin-vue-i18n/messages"
 
 // element3
 import 'element3/lib/theme-chalk/index.css'
-import Element3 from "element3"
+import Element3 from "element3";
 
 const i18n = createI18n({
   legacy: false,
