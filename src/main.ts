@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-02-22 16:21:39
- * @LastEditTime: 2021-03-26 15:10:33
+ * @LastEditTime: 2021-03-26 15:17:02
  * @LastEditors: Please set LastEditors
  * @Description: 项目入口
  * @FilePath: /vite-project/src/main.ts
@@ -19,7 +19,7 @@ import 'element3/lib/theme-chalk/index.css'
 import Element3 from "element3";
 
 // router
-import { setupRouter } from './routers';
+import router, { setupRouter } from './routers';
 
 const i18n = createI18n({
   legacy: false,
@@ -34,4 +34,7 @@ app.use(Element3);
 
 setupRouter(app);
 
-app.mount('#app')
+router.isReady().then(() => {
+  app.mount('#app', true)
+})
+
