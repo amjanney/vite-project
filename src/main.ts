@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-02-22 16:21:39
- * @LastEditTime: 2021-03-26 09:52:17
+ * @LastEditTime: 2021-03-26 11:57:06
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vite-project/src/main.ts
@@ -21,6 +21,9 @@ import messages from "@intlify/vite-plugin-vue-i18n/messages"
 import 'element3/lib/theme-chalk/index.css'
 import Element3 from "element3";
 
+// router
+import router from './routers/index.js';
+
 const i18n = createI18n({
   legacy: false,
   locale: "en",
@@ -28,6 +31,9 @@ const i18n = createI18n({
 });
 
 const app = createApp(App);
+
 app.use(i18n);
 app.use(Element3);
+app.use(router);
+
 app.mount('#app')
