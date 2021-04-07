@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-02-22 16:21:39
- * @LastEditTime: 2021-04-07 16:24:05
+ * @LastEditTime: 2021-04-07 18:45:50
  * @LastEditors: Please set LastEditors
  * @Description: 项目入口
  * @FilePath: /vite-project/src/main.ts
@@ -12,7 +12,7 @@ import App from './App.vue'
 
 // i18n
 import { createI18n } from "vue-i18n";
-import messages from "@intlify/vite-plugin-vue-i18n/messages"
+import messages from "@intlify/vite-plugin-vue-i18n/messages";
 
 // element3
 import 'element3/lib/theme-chalk/index.css'
