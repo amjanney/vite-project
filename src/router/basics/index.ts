@@ -1,41 +1,26 @@
 /*
  * @Author: your name
  * @Date: 2021-03-26 14:59:55
- * @LastEditTime: 2021-04-07 11:53:56
+ * @LastEditTime: 2021-04-07 15:49:51
  * @LastEditors: Please set LastEditors
  * @Description: 基础路由，不需要权限
  * @FilePath: /vite-project/src/routers/basics/index.ts
  */
 
-// import Foo from '/@/views/test/router-test/foo.vue';
-// import Bar from '/@/views/test/router-test/bar.vue';
-
-// export const basicRoutes = [
-//   { path: '/foo', component: Foo },
-//   { path: '/bar', component: Bar }
-// ]
 import type { AppRouteRecordRaw, AppRouteModule } from '/@/router/types';
-import { PageEnum } from '/@/enums/pageEnum';
+// 首页路由，登陆路由
+import { RootRoute, LoginRoute } from "/@/router/constant";
 
-export const RootRoute: AppRouteRecordRaw = {
-  path: '/',
-  name: 'Root',
-  redirect: PageEnum.BASE_HOME,
-  meta: {
-    title: 'Root',
-  },
-};
+// 引入modules下的所有路由文件
+const modules = import.meta.globEager('./modules/**/*.ts');
+let routeModuleList: AppRouteModule[] = [];
 
-// import Login from '/@/views/login/Login.vue';
-
-export const LoginRoute: AppRouteRecordRaw = {
-  path: '/login',
-  name: 'Login',
-  component: () => import('/@/views/login/Login.vue'),
-  meta: {
-    title: '登陆',
-  },
-};
+// 获取每个模块中的路由
+Object.keys(modules).forEach((key) => {
+  const mod = modules[key].default || {};
+  const modList = Array.isArray(mod) ? [...mod] : mod;
+  routeModuleList.push(modList);
+})
 
 // 基础路由 不用权限
-export const basicRoutes = [LoginRoute, RootRoute]
+export const basicRoutes = [LoginRoute, RootRoute, ...routeModuleList]

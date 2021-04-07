@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-02-22 16:21:39
- * @LastEditTime: 2021-04-07 11:27:52
+ * @LastEditTime: 2021-04-07 15:21:06
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vite-project/src/App.vue
@@ -12,13 +12,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import Home from './views/index.vue';
+import { defineComponent } from 'vue';
 export default defineComponent({
-  name: 'App',
-  components: {
-    Home,
-  }
+  name: 'App'
 })
 </script>
 

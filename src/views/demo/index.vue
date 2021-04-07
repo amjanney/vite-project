@@ -1,9 +1,9 @@
 <!--
  * @Author: your name
  * @Date: 2021-03-10 10:49:27
- * @LastEditTime: 2021-03-26 11:05:42
+ * @LastEditTime: 2021-04-07 15:13:27
  * @LastEditors: Please set LastEditors
- * @Description: 组建入口文件
+ * @Description: composition api 测试文件
  * @FilePath: /vite-project/src/view/index.vue
 -->
 <template>
@@ -24,14 +24,14 @@
   import { defineComponent } from 'vue'
   import ModelModifier from '/@/components/ModelModifier.vue';
   import HelloWorld from '/@/components/HelloWorld.vue'
-  import CompositionApi from './test/composition-api/index.vue';
-  import JsxTest from './test/jsx-test/index.vue';
-  import MockTest from './test/mock-plugin-test/index.vue';
-  import LanguageTest from './test/language-test/index.vue';
-  import ElementTest from './test/element3-test/index.vue';
-  import RouterTest from './test/router-test/index.vue';
+  import CompositionApi from './composition-api/index.vue';
+  import JsxTest from './jsx-test/index.vue';
+  import MockTest from './mock-plugin-test/index.vue';
+  import LanguageTest from './language-test/index.vue';
+  import ElementTest from './element3-test/index.vue';
+  import RouterTest from './router-test/index.vue';
   export default defineComponent({
-    name: 'home',
+    name: 'demo',
     components: {
       ModelModifier,
       HelloWorld,
