@@ -1,18 +1,19 @@
 <!--
  * @Author: your name
  * @Date: 2021-02-22 16:21:39
- * @LastEditTime: 2021-03-23 16:10:28
+ * @LastEditTime: 2021-04-07 11:27:52
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vite-project/src/App.vue
 -->
 <template>
-  <Home />
+  <!-- <Home /> -->
+  <router-view />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import Home from './view/index.vue';
+import Home from './views/index.vue';
 export default defineComponent({
   name: 'App',
   components: {
