@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-02-22 16:21:39
- * @LastEditTime: 2021-04-07 10:12:15
+ * @LastEditTime: 2021-04-07 16:24:05
  * @LastEditors: Please set LastEditors
  * @Description: 项目入口
  * @FilePath: /vite-project/src/main.ts
@@ -18,6 +18,10 @@ import messages from "@intlify/vite-plugin-vue-i18n/messages"
 import 'element3/lib/theme-chalk/index.css'
 import Element3 from "element3";
 
+// ant-design-vue
+import 'ant-design-vue/dist/antd.css';
+import Antd from 'ant-design-vue';
+
 // router
 import router, { setupRouter } from './router';
 
@@ -31,7 +35,7 @@ const app = createApp(App);
 
 app.use(i18n);
 app.use(Element3);
-
+app.use(Antd);
 setupRouter(app);
 
 router.isReady().then(() => {
