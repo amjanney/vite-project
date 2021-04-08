@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-02-22 16:21:39
- * @LastEditTime: 2021-04-07 18:45:50
+ * @LastEditTime: 2021-04-07 19:27:19
  * @LastEditors: Please set LastEditors
  * @Description: 项目入口
  * @FilePath: /vite-project/src/main.ts
@@ -21,6 +21,9 @@ import Element3 from "element3";
 // ant-design-vue
 import 'ant-design-vue/dist/antd.css';
 import Antd from 'ant-design-vue';
+
+// style 
+import '/@/styles/index.less';
 
 // router
 import router, { setupRouter } from './router';
