@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-04-16 16:27:13
- * @LastEditTime: 2021-04-16 16:30:19
+ * @LastEditTime: 2021-04-19 16:29:18
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vite-project/build/config/themeConfig.ts
@@ -9,6 +9,7 @@
 
 import { generate } from '@ant-design/colors';
 
+// 默认全局主题色
 export const primaryColor = '#0084f4';
 
 export const themeMode = 'light';
