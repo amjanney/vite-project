@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-23 11:25:29
- * @LastEditTime: 2021-03-23 11:30:26
+ * @LastEditTime: 2021-04-19 17:38:18
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vite-project/src/utils/propType.js
@@ -9,3 +9,5 @@
 
  import { createTypes } from 'vue-types';
 
+
+ 
