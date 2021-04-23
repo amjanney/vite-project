@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-04-19 17:22:00
- * @LastEditTime: 2021-04-19 19:13:21
+ * @LastEditTime: 2021-04-23 16:52:20
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vite-project/src/components/AppLogo/index.vue
@@ -28,7 +28,7 @@ export default defineComponent({
     showTitle: VueTypes.bool.def(true),
   },
   setup () {
-    const title = 'vite+project';
+    const title = 'vite+vue3';
     const { prefixCls } = useDesign('app-logo')
     return {
       title,

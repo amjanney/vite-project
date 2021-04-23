@@ -1,15 +1,14 @@
 <!--
  * @Author: your name
- * @Date: 2021-04-19 20:40:31
- * @LastEditTime: 2021-04-19 20:41:18
+ * @Date: 2021-04-20 10:33:14
+ * @LastEditTime: 2021-04-23 16:54:03
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
- * @FilePath: /vite-project/src/layouts/default/sider/LayoutSIder.vue
+ * @FilePath: /vite-project/src/layouts/default/footer/index.vue
 -->
-
 <template>
   <div>
-    LayoutSideBar
+    footer
   </div>
 </template>
 
@@ -17,7 +16,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'LayoutSideBar',
+  name: 'LayoutFooter',
   setup () {
     
 

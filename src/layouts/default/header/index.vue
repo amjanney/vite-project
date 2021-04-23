@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-04-16 17:28:52
- * @LastEditTime: 2021-04-19 17:26:16
+ * @LastEditTime: 2021-04-23 16:46:03
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vite-project/src/layouts/default/header/index.vue
@@ -11,7 +11,7 @@
   <Header>
     <!-- left -->
     <div :class="`${prefixCls}-left`">
-      <AppLogo />
+      <!-- <AppLogo /> -->
     </div>
 
     <!-- menu -->

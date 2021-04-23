@@ -1,18 +1,19 @@
 <!--
  * @Author: your name
  * @Date: 2021-03-26 10:03:54
- * @LastEditTime: 2021-04-19 20:39:20
+ * @LastEditTime: 2021-04-23 16:54:35
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /vite-project/src/layouts/index.vue
 -->
 <template>
   <Layout :class="prefixCls">
-    <!-- <LayoutHeader></LayoutHeader> -->
     <Layout class="ant-layout-has-sider">
       <LayoutSiderBar></LayoutSiderBar>
       <Layout :class="`${prefixCls}_main`">
-        main
+        <LayoutHeader></LayoutHeader>
+        <LayoutContent></LayoutContent>
+        <LayoutFooter></LayoutFooter>
       </Layout>
     </Layout>
     <router-view></router-view>
@@ -25,6 +26,8 @@ import { Layout } from 'ant-design-vue';
 
 import LayoutHeader from './header/index.vue';
 import LayoutSiderBar from './sider/index.vue';
+import LayoutContent from './content/index.vue';
+import LayoutFooter from './footer/index.vue';
 
 import { useDesign } from '/@/hooks/web/useDesign';
 
@@ -33,7 +36,9 @@ export default defineComponent({
   components: {
     Layout,
     LayoutHeader,
-    LayoutSiderBar
+    LayoutSiderBar,
+    LayoutContent,
+    LayoutFooter
   },
   setup () {
     const { prefixCls } = useDesign('default-layout');
